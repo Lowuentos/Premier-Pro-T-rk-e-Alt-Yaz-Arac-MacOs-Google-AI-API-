@@ -1,0 +1,6 @@
+{
+  "name": "Premiere Pro Türkçe Altyazı",
+  "description": "Türkçe röportaj ve videoların otomatik olarak metne dökülüp, Premiere Pro uyumlu altyazılara (SRT) dönüştürülmesi için profesyonel araç.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

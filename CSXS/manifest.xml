@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionManifest Version="9.0" ExtensionBundleId="com.antigravity.subtitler" 
+                   ExtensionBundleVersion="1.0.0" ExtensionBundleName="Türkçe Altyazı Üretici" 
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    
+    <ExtensionList>
+        <Extension Id="com.antigravity.subtitler" Version="1.0.0" />
+    </ExtensionList>
+
+    <ExecutionEnvironment>
+        <HostList>
+            <!-- PPRO is the host ID for Premiere Pro -->
+            <Host Name="PPRO" Version="[14.0,99.9]" />
+        </HostList>
+        <LocaleList>
+            <Locale Code="All" />
+        </LocaleList>
+        <RequiredRuntimeList>
+            <RequiredRuntime Name="CSXS" Version="9.0" />
+        </RequiredRuntimeList>
+    </ExecutionEnvironment>
+
+    <DispatchInfoList>
+        <Extension Id="com.antigravity.subtitler">
+            <DispatchInfo>
+                <Resources>
+                    <MainPath>./dist/index.html</MainPath>
+                    <ScriptPath>./host/index.jsx</ScriptPath>
+                    <CEFCommandLine>
+                        <Parameter>--enable-nodejs</Parameter>
+                        <Parameter>--mixed-context</Parameter>
+                    </CEFCommandLine>
+                </Resources>
+                <Lifecycle>
+                    <AutoVisible>true</AutoVisible>
+                </Lifecycle>
+                <UI>
+                    <Type>Panel</Type>
+                    <Menu>Türkçe Altyazı Üretici</Menu>
+                    <Geometry>
+                        <Size>
+                            <Height>700</Height>
+                            <Width>450</Width>
+                        </Size>
+                    </Geometry>
+                </UI>
+            </DispatchInfo>
+        </Extension>
+    </DispatchInfoList>
+</ExtensionManifest>
